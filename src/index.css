@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600;1,700&family=DM+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;1,400&display=swap');
+/* Using Times New Roman - system font, no import needed */
 
 @tailwind base;
 @tailwind components;
@@ -49,8 +49,8 @@
     --hero-gradient: linear-gradient(135deg, hsl(40 33% 96%), hsl(40 30% 92%));
     --section-alt: 40 25% 94%;
     --accent-glow: 168 50% 45%;
-    --text-serif: 'Playfair Display', Georgia, serif;
-    --text-sans: 'DM Sans', system-ui, sans-serif;
+    --text-serif: 'Times New Roman', Times, serif;
+    --text-sans: 'Times New Roman', Times, serif;
   }
 
   .dark {

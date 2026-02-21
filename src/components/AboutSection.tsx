@@ -23,7 +23,7 @@ const AboutSection = () => {
             Get To Know Me
           </p>
           <h2 className="text-3xl sm:text-4xl font-bold">
-            About <span className="font-serif italic accent-underline">Me</span>
+            About <span className="font-serif accent-underline">Me</span>
           </h2>
         </motion.div>
 
