@@ -93,12 +93,20 @@
   }
 
   body {
-    @apply bg-background text-foreground;
+    @apply bg-background text-foreground text-base sm:text-lg;
     font-family: var(--text-sans);
   }
 
   h1, h2, h3, h4, h5, h6 {
     font-family: var(--text-serif);
+  }
+
+  p {
+    @apply text-base sm:text-lg leading-relaxed;
+  }
+
+  a {
+    @apply text-base sm:text-lg;
   }
 }
 
