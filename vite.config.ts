@@ -5,6 +5,12 @@ import { componentTagger } from "lovable-tagger";
 
 // https://vitejs.dev/config/
 export default defineConfig(({ mode }) => ({
+  base: "/Papia-Sultana-Prianka-Portfolio/",
+  build: {
+    rollupOptions: {
+      input: path.resolve(__dirname, "index.source.html"),
+    },
+  },
   server: {
     host: "::",
     port: 8080,

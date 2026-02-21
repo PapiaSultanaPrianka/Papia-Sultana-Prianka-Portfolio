@@ -4,9 +4,10 @@
   "version": "0.0.0",
   "type": "module",
   "scripts": {
-    "dev": "vite",
+    "dev": "vite --open /index.source.html",
     "build": "vite build",
     "build:dev": "vite build --mode development",
+    "deploy:prepare": "npm run build && node scripts/sync-pages-root.mjs",
     "lint": "eslint .",
     "preview": "vite preview",
     "test": "vitest run",
