@@ -37,20 +37,6 @@ const HeroSection = () => {
               Reinforcement Learning in Human-Computer Interaction (HCI).
             </p>
 
-            <div className="flex flex-wrap items-center gap-4 mb-10">
-              <a
-                href="#contact"
-                className="px-7 py-3 rounded-full bg-primary text-primary-foreground font-medium hover:opacity-90 transition-opacity"
-              >
-                Hire Me
-              </a>
-              <a
-                href="#projects"
-                className="px-7 py-3 rounded-full border-2 border-foreground text-foreground font-medium hover:bg-foreground hover:text-background transition-colors"
-              >
-                View Projects
-              </a>
-            </div>
 
             {/* Social links */}
             <div className="flex items-center gap-4">
