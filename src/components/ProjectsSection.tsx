@@ -56,7 +56,7 @@ const ProjectsSection = () => {
           </p>
           <h2 className="text-3xl sm:text-4xl font-bold">
             My{" "}
-            <span className="font-serif italic accent-underline">Projects</span>
+            <span className="font-serif accent-underline">Projects</span>
           </h2>
           <p className="text-muted-foreground mt-3 max-w-md mx-auto text-sm">
             A collection of academic and personal projects showcasing my skills and thought process.

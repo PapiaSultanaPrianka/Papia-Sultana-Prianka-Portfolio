@@ -34,7 +34,7 @@ const ResumeSection = () => {
             My Background
           </p>
           <h2 className="text-3xl sm:text-4xl font-bold">
-            <span className="font-serif italic accent-underline">Resume</span>
+            <span className="font-serif accent-underline">Resume</span>
           </h2>
         </motion.div>
 

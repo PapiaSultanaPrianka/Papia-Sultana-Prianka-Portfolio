@@ -26,7 +26,7 @@ const HeroSection = () => {
             </p>
             <h1 className="text-4xl sm:text-5xl lg:text-6xl font-bold leading-tight mb-6">
               Hi, I'm{" "}
-              <span className="font-serif italic accent-underline">
+              <span className="font-serif accent-underline">
                 Papia Sultana
               </span>{" "}
               Prianka

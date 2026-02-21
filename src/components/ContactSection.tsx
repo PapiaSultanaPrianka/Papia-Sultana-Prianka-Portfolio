@@ -36,7 +36,7 @@ const ContactSection = () => {
             Get In Touch
           </p>
           <h2 className="text-3xl sm:text-4xl font-bold">
-            <span className="font-serif italic accent-underline">Contact</span> Me
+            <span className="font-serif accent-underline">Contact</span> Me
           </h2>
         </motion.div>
 
