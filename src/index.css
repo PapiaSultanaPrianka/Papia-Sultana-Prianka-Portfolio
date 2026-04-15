@@ -1,0 +1,144 @@
+/* Using Times New Roman - system font, no import needed */
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --background: 40 33% 96%;
+    --foreground: 230 25% 15%;
+
+    --card: 40 30% 98%;
+    --card-foreground: 230 25% 15%;
+
+    --popover: 40 30% 98%;
+    --popover-foreground: 230 25% 15%;
+
+    --primary: 168 40% 40%;
+    --primary-foreground: 0 0% 100%;
+
+    --secondary: 40 25% 92%;
+    --secondary-foreground: 230 25% 15%;
+
+    --muted: 40 20% 93%;
+    --muted-foreground: 230 10% 46%;
+
+    --accent: 42 80% 55%;
+    --accent-foreground: 230 25% 15%;
+
+    --destructive: 0 84% 60%;
+    --destructive-foreground: 0 0% 100%;
+
+    --border: 40 20% 88%;
+    --input: 40 20% 88%;
+    --ring: 168 40% 40%;
+
+    --radius: 0.75rem;
+
+    --sidebar-background: 40 30% 97%;
+    --sidebar-foreground: 230 25% 15%;
+    --sidebar-primary: 168 40% 40%;
+    --sidebar-primary-foreground: 0 0% 100%;
+    --sidebar-accent: 40 25% 92%;
+    --sidebar-accent-foreground: 230 25% 15%;
+    --sidebar-border: 40 20% 88%;
+    --sidebar-ring: 168 40% 40%;
+
+    /* Custom tokens */
+    --hero-gradient: linear-gradient(135deg, hsl(40 33% 96%), hsl(40 30% 92%));
+    --section-alt: 40 25% 94%;
+    --accent-glow: 168 50% 45%;
+    --text-serif: 'Times New Roman', Times, serif;
+    --text-sans: 'Times New Roman', Times, serif;
+  }
+
+  .dark {
+    --background: 230 25% 10%;
+    --foreground: 40 20% 92%;
+
+    --card: 230 22% 14%;
+    --card-foreground: 40 20% 92%;
+
+    --popover: 230 22% 14%;
+    --popover-foreground: 40 20% 92%;
+
+    --primary: 168 45% 50%;
+    --primary-foreground: 230 25% 10%;
+
+    --secondary: 230 18% 18%;
+    --secondary-foreground: 40 20% 92%;
+
+    --muted: 230 18% 18%;
+    --muted-foreground: 40 10% 60%;
+
+    --accent: 42 80% 55%;
+    --accent-foreground: 230 25% 10%;
+
+    --destructive: 0 62% 30%;
+    --destructive-foreground: 40 20% 92%;
+
+    --border: 230 18% 22%;
+    --input: 230 18% 22%;
+    --ring: 168 45% 50%;
+
+    --section-alt: 230 20% 12%;
+    --accent-glow: 168 50% 55%;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+
+  body {
+    @apply bg-background text-foreground text-base sm:text-lg;
+    font-family: var(--text-sans);
+  }
+
+  h1, h2, h3, h4, h5, h6 {
+    font-family: var(--text-serif);
+  }
+
+  p {
+    @apply text-base sm:text-lg leading-relaxed;
+  }
+
+  a {
+    @apply text-base sm:text-lg;
+  }
+}
+
+@layer utilities {
+  .section-alt {
+    background-color: hsl(var(--section-alt));
+  }
+
+  .font-serif {
+    font-family: var(--text-serif);
+  }
+
+  .font-sans {
+    font-family: var(--text-sans);
+  }
+
+  .text-gradient {
+    background: linear-gradient(135deg, hsl(var(--primary)), hsl(var(--accent)));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+  }
+
+  .accent-underline {
+    text-decoration: underline;
+    text-decoration-color: hsl(var(--accent));
+    text-underline-offset: 4px;
+    text-decoration-thickness: 3px;
+  }
+}
+
+/* Smooth scroll */
+html {
+  scroll-behavior: smooth;
+}
